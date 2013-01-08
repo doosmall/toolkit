@@ -20,5 +20,7 @@ vim /root/.vimrc
 filetype plugin on
 let g:pydiction_location = '/root/complete-dict'
 
+增加一个我自个使用vimrc配置
+
 
 
