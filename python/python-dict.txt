@@ -1,0 +1,24 @@
+安装步骤：
+1.下载
+
+
+wget ftp://ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2
+wget http://www.vim.org/scripts/download_script.php?src_id=11062
+
+
+2. 安装vim，标准./confiure && make && make install
+
+3. 配置，针对root用户
+
+unzip pydiction-1.2.zip
+cd pydiction-1.2
+cp complete-dict /root/
+mkdir -p  /root/.vim/after/ftplugin/
+cp python_pydiction.vim /root/.vim/after/ftplugin/
+vim /root/.vimrc 
+添加：
+filetype plugin on
+let g:pydiction_location = '/root/complete-dict'
+
+
+
